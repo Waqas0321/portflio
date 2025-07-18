@@ -40,16 +40,21 @@ const ContactSection = () => {
 							</svg>
 							Email Me
 						</a>
-						<a
-							href="tel:+923216548001"
-							className="px-8 py-3 bg-gray-800 rounded-full font-medium hover:bg-gray-700 transition-colors inline-flex items-center justify-center gap-2 border border-gray-700"
-						>
-							<svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-								<path fillRule="evenodd" d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" clipRule="evenodd" />
-								<path fillRule="evenodd" d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" clipRule="evenodd" />
-							</svg>
-							Call Me
-						</a>
+					<a
+  href="https://wa.me/923216548001"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-8 py-3 bg-green-600 rounded-full font-medium hover:bg-green-500 transition-colors inline-flex items-center justify-center gap-2 border border-green-700 text-white"
+>
+  <svg
+    className="w-5 h-5"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path d="M20.52 3.48A11.77 11.77 0 0 0 12.04 0C5.4 0 .04 5.35 0 11.96a11.86 11.86 0 0 0 1.61 6L0 24l6.22-1.63a11.9 11.9 0 0 0 5.8 1.47h.01c6.63 0 12-5.36 12-11.96a11.83 11.83 0 0 0-3.51-8.4zM12.03 22c-1.64 0-3.24-.4-4.67-1.17l-.34-.18-3.69.96.99-3.59-.22-.37a9.92 9.92 0 0 1-1.52-5.22C2.6 6.57 6.86 2.3 12.04 2.3a9.9 9.9 0 0 1 7.06 2.93 9.87 9.87 0 0 1 2.91 7.04c0 5.48-4.48 9.93-9.98 9.93zm5.48-7.39c-.3-.15-1.77-.87-2.05-.96-.27-.1-.47-.15-.67.15s-.77.96-.95 1.15c-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48a8.89 8.89 0 0 1-1.65-2.05c-.17-.3-.02-.46.13-.6.13-.13.3-.35.44-.53.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.53-.08-.15-.68-1.64-.94-2.25-.25-.6-.5-.52-.68-.52h-.6c-.2 0-.52.08-.8.38s-1.04 1.02-1.04 2.47 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.1 4.48.71.31 1.27.5 1.7.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.06-.12-.27-.2-.57-.35z" />
+  </svg>
+  WhatsApp Me
+</a>
 						<a
 							href="/resume.pdf"
 							target="_blank"
