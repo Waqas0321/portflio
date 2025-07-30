@@ -80,9 +80,153 @@ const apps: App[] = [
 		description: 'A real-time training request and booking app designed for trainers and users. Features live socket tracking, in-app payments, map tracking, and real-time session updates. Built with Bloc architecture and integrated REST APIs for seamless backend interaction.',
 		technologies: ['Flutter', 'Bloc', 'Socket.IO', 'Google Maps', 'Stripe', 'REST API'],
 		platforms: ['Android', 'iOS'],
-		downloads: '1,800+',
+		downloads: '',
 		rating: 4.8
-	}
+	},
+	{
+    id: 9,
+    name: "QuickNotes",
+    description: "A clean, minimalist note-taking app with support for folders, tags, and syncing using Firebase. Includes dark mode and markdown support.",
+    technologies: ["Flutter", "Firebase", "Local Storage", "Dark Mode"],
+    platforms: ["Android", "iOS"],
+    downloads: "",
+    rating: 4.6
+  },
+  {
+    id: 10,
+    name: "MyWallet",
+    description: "A personal finance tracker to manage income, expenses, savings, and budgets with chart analytics, secure login, and export to PDF/CSV.",
+    technologies: ["Flutter", "SQLite", "Charts", "PDF Export"],
+    platforms: ["Android"],
+    downloads: "",
+    rating: 4.4
+  },
+  {
+    id: 11,
+    name: "EduLearn",
+    description: "An e-learning platform with video courses, quizzes, student progress, and certificate generation. Admin panel for content upload.",
+    technologies: ["Flutter", "Firebase", "Video Player", "Quiz System"],
+    platforms: ["Android", "iOS"],
+    downloads: "",
+    rating: 4.6
+  },
+  {
+    id: 12,
+    name: "FitnessMate",
+    description: "Fitness tracker app with daily goals, water reminders, workout routines, and progress reports using charts and calendar integration.",
+    technologies: ["Flutter", "Calendar", "Charts", "Notifications"],
+    platforms: ["Android", "iOS", "Smart Watch"],
+    downloads: "",
+    rating: 4.7
+  },
+  {
+    id: 13,
+    name: "Scan2PDF",
+    description: "PDF scanner app using camera with OCR support, document cropping, merging, and export to cloud services.",
+    technologies: ["Flutter", "Camera", "OCR", "PDF", "Cloud Integration"],
+    platforms: ["Android"],
+    downloads: "",
+    rating: 4.8
+  },
+  {
+    id: 14,
+    name: "ShopXpress",
+    description: "E-commerce application with cart, wishlist, payment gateway integration, and order tracking. Admin panel for sellers.",
+    technologies: ["Flutter", "GetX", "Payment Integration", "Firebase"],
+    platforms: ["Android", "iOS"],
+    downloads: "",
+    rating: 4.5
+  },
+  {
+    id: 15,
+    name: "ChatEase",
+    description: "Real-time chat app with Firebase authentication, group and private chat, image sharing, and online indicators.",
+    technologies: ["Flutter", "Firebase", "Chat", "Authentication"],
+    platforms: ["Android", "iOS"],
+    downloads: "",
+    rating: 4.6
+  },
+  {
+    id: 16,
+    name: "TravelGuide",
+    description: "Travel and tourism guide app with places listing, map integration, reviews, and itinerary planning.",
+    technologies: ["Flutter", "Maps", "Geolocation", "REST API"],
+    platforms: ["Android", "iOS"],
+    downloads: "30K+",
+    rating: 4.5
+  },
+  {
+    id: 17,
+    name: "Newsly",
+    description: "News aggregator app with personalized feed, bookmarks, and category filtering. API-based dynamic content fetching.",
+    technologies: ["Flutter", "REST API", "News API", "Local Storage"],
+    platforms: ["Android", "iOS"],
+    downloads: "",
+    rating: 4.4
+  },
+  {
+    id: 18,
+    name: "MediCare",
+    description: "Health tracking and appointment booking app with doctor profiles, schedules, and online consultation options.",
+    technologies: ["Flutter", "Firebase", "Calendar", "Video Call API"],
+    platforms: ["Android", "iOS"],
+    downloads: "",
+    rating: 4.5
+  },
+  {
+    id: 19,
+    name: "QuizMe",
+    description: "Gamified quiz app with multiple categories, leaderboard, and timed challenges. Supports offline mode.",
+    technologies: ["Flutter", "Local DB", "Timer", "Gamification"],
+    platforms: ["Android"],
+    downloads: "",
+    rating: 4.3
+  },
+  {
+    id: 20,
+    name: "LangBridge",
+    description: "Language learning app with audio lessons, flashcards, daily goals, and level tracking. Supports multiple languages.",
+    technologies: ["Flutter", "Audio", "SQLite", "Progress Tracker"],
+    platforms: ["Android", "iOS"],
+    downloads: "",
+    rating: 4.6
+  },
+  {
+    id: 21,
+    name: "CryptoTrack",
+    description: "Cryptocurrency tracker with real-time price updates, favorites list, alerts, and market analysis.",
+    technologies: ["Flutter", "API Integration", "Charts", "Notifications"],
+    platforms: ["Android", "iOS"],
+    downloads: "",
+    rating: 4.5
+  },
+  {
+    id: 22,
+    name: "Eventify",
+    description: "Event booking and ticketing app with event listings, RSVP, QR check-ins, and admin dashboard.",
+    technologies: ["Flutter", "QR Code", "Firebase", "Ticket System"],
+    platforms: ["Android", "iOS"],
+    downloads: "",
+    rating: 4.4
+  },
+  {
+    id: 23,
+    name: "WeatherNow",
+    description: "Simple and accurate weather app with live updates, forecasts, and radar animations using OpenWeatherMap API.",
+    technologies: ["Flutter", "Weather API", "Animations"],
+    platforms: ["Android", "iOS"],
+    downloads: "",
+    rating: 4.4
+  },
+  {
+    id: 24,
+    name: "PetCare",
+    description: "Pet care management app for pet profiles, reminders, vet visits, food schedules, and vaccination tracking.",
+    technologies: ["Flutter", "Local Storage", "Reminders", "Notifications"],
+    platforms: ["Android", "iOS"],
+    downloads: "",
+    rating: 4.6
+  }
 ];
 
 const AppShowcase = () => {
