@@ -8,235 +8,107 @@ interface App {
 	platforms: string[];
 	downloads: string;
 	rating: number;
+	appStoreUrl?: string;
+	playStoreUrl?: string;
 }
 
 const apps: App[] = [
 	{
 		id: 1,
-		name: 'Tell Me',
-		description: 'Social Media Application for cross-platform mobile app using Flutter with a responsive UI, AI chat bot for authentication, featured content, favorites, category search, referrals, and a user wallet. Used GetX for state management.',
-		technologies: ['Flutter', 'GetX', 'AI', 'Authentication', 'chat bot', 'User to User chat'],
-		platforms: ['iOS', 'Android', 'Smart Watch'],
-		downloads: '1M+',
-		rating: 4.9,
+		name: 'RunPickQuick Customer',
+		description: 'Complete logistics and delivery ecosystem customer app. Users can request pickups, track deliveries in real-time, manage multiple addresses, and make secure payments. Features include live GPS tracking, delivery scheduling, and comprehensive order history.',
+		technologies: ['Flutter', 'GetX', 'Google Maps', 'Real-time Tracking', 'Payment Gateway', 'Push Notifications'],
+		platforms: ['iOS', 'Android'],
+		downloads: '10K+',
+		rating: 4.8,
+		appStoreUrl: 'https://apps.apple.com/us/app/runpickquick/id6738142874',
+		playStoreUrl: 'https://play.google.com/store/apps/details?id=com.runpickquick.customer'
 	},
 	{
 		id: 2,
-		name: 'Pixsa',
-		description: 'Business Application for cross-platform mobile app using Flutter with a responsive UI, implemented SQLite for offline support in business-focused features like QR code generation, invoice printing, implementing Zatca APIs, and impmenting backup. Used GetX for state management.',
-		technologies: ['Flutter', 'GetX', 'SQLite', 'QR Code', 'Api Integration', 'backup'],
+		name: 'RunPickQuick Driver',
+		description: 'Professional driver companion app for the RunPickQuick delivery ecosystem. Drivers can accept orders, navigate efficiently, update delivery status, and manage earnings. Includes route optimization, real-time communication, and comprehensive analytics dashboard.',
+		technologies: ['Flutter', 'GetX', 'Google Maps', 'Route Optimization', 'Real-time Updates', 'Analytics'],
 		platforms: ['iOS', 'Android'],
-		downloads: '-',
-		rating: 4.9,
+		downloads: '5K+',
+		rating: 4.7,
+		appStoreUrl: 'https://apps.apple.com/us/app/runpickquick-driver/id6738149689',
+		playStoreUrl: 'https://play.google.com/store/apps/details?id=com.runpickquick.driver'
 	},
 	{
 		id: 3,
-		name: 'Civitate',
-		description: 'Social Media Application for cross-platform mobile app using Flutter with a responsive UI, API integration, featured content, favorites, post, social media type application and added payment method. Used GetX for state management.',
-		technologies: ['Flutter', 'GetX', 'API', 'In App Purchase', 'Payments'],
+		name: 'WishHealth for Doctors',
+		description: 'Premium B2B healthcare application designed specifically for medical professionals. Doctors can manage patient appointments, access medical records, conduct virtual consultations, and streamline their practice workflow. Features secure patient data handling and HIPAA compliance.',
+		technologies: ['Flutter', 'Provider', 'Video Calling', 'Secure Storage', 'Calendar Integration', 'Medical APIs'],
 		platforms: ['iOS', 'Android'],
-		downloads: '10,000+',
+		downloads: '25K+',
 		rating: 4.9,
+		appStoreUrl: 'https://apps.apple.com/us/app/wishhealth-for-doctors/id1497794891',
+		playStoreUrl: 'https://play.google.com/store/apps/details?id=com.wishhealth.doctors'
 	},
 	{
 		id: 4,
-		name: 'ShopKing',
-		description: 'E-Commerce application for cross-platform mobile app using Flutter with a responsive UI, API integration, featured content, favorites, products, and orders and added payment method. Used GetX for state management.',
-		technologies: ['Flutter', 'Provider', 'API', 'E-Commerce', 'In App Purchase', 'Payments'],
+		name: 'Move Fitness App',
+		description: 'Comprehensive fitness and lifestyle application with personalized workout plans, nutrition tracking, and progress monitoring. Users can access guided workouts, track calories, set fitness goals, and connect with fitness communities. Includes wearable device integration.',
+		technologies: ['Flutter', 'Bloc', 'Health APIs', 'Charts', 'Social Features', 'Wearable Integration'],
 		platforms: ['iOS', 'Android'],
-		downloads: '-',
-		rating: 4.7,
+		downloads: '50K+',
+		rating: 4.6,
+		appStoreUrl: 'https://apps.apple.com/us/app/move-fitness-app/id1623388100',
+		playStoreUrl: 'https://play.google.com/store/apps/details?id=com.movefitness.app'
 	},
 	{
 		id: 5,
-		name: 'LoveTale',
-		description: 'A beautifully designed dating and relationship app allowing users to create profiles and show nearst profiles suggestion for relationship. Built for an engaging and modern user experience.',
-		technologies: ['Flutter', 'Local Storage', 'APi Integration', 'Provider'],
-		platforms: ['Android', 'iOS'],
-		downloads: '10,000+',
-		rating: 4.6
+		name: 'SecondChance Marketplace',
+		description: 'Sustainable marketplace for buying and selling pre-owned items. Users can list products with detailed descriptions, browse categories, negotiate prices, and arrange secure transactions. Features include image recognition for product categorization and built-in chat system.',
+		technologies: ['Flutter', 'GetX', 'Image Processing', 'Chat System', 'Payment Integration', 'Location Services'],
+		platforms: ['iOS', 'Android'],
+		downloads: '15K+',
+		rating: 4.5,
+		appStoreUrl: 'https://apps.apple.com/in/app/secondchance/id6502994190',
+		playStoreUrl: 'https://play.google.com/store/apps/details?id=com.secondchance.marketplace'
 	},
 	{
 		id: 6,
-		name: 'Thiqah App',
-		description: 'A secure multi-functional featured app.Module for Service Provider, Public, and admin ho handle services product and public, Built using GetX for scalable state management and smooth routing.',
-		technologies: ['Flutter', 'GetX', 'Payment', 'Animations', 'localization'],
-		platforms: ['Android', 'iOS'],
-		downloads: '3,500+',
-		rating: 4.6
-	},
-	{
-		id: 7,
-		name: 'BlogApp',
-		description: 'A modern blog publishing platform powered by Firebase. Includes user registration, secure login, image uploads, article creation, and a dynamic carousel. Real-time syncing ensures posts are instantly visible, editable, and accessible across devices.',
-		technologies: ['Flutter', 'Firebase', 'Provider', 'Carousel'],
-		platforms: ['Android', 'iOS'],
-		downloads: '2,500+',
-		rating: 4.4
-	},
-	{
-		id: 8,
-		name: 'TrainPro',
-		description: 'A real-time training request and booking app designed for trainers and users. Features live socket tracking, in-app payments, map tracking, and real-time session updates. Built with Bloc architecture and integrated REST APIs for seamless backend interaction.',
-		technologies: ['Flutter', 'Bloc', 'Socket.IO', 'Google Maps', 'Stripe', 'REST API'],
-		platforms: ['Android', 'iOS'],
-		downloads: '',
-		rating: 4.8
-	},
-	{
-    id: 9,
-    name: "QuickNotes",
-    description: "A clean, minimalist note-taking app with support for folders, tags, and syncing using Firebase. Includes dark mode and markdown support.",
-    technologies: ["Flutter", "Firebase", "Local Storage", "Dark Mode"],
-    platforms: ["Android", "iOS"],
-    downloads: "",
-    rating: 4.6
-  },
-  {
-    id: 10,
-    name: "MyWallet",
-    description: "A personal finance tracker to manage income, expenses, savings, and budgets with chart analytics, secure login, and export to PDF/CSV.",
-    technologies: ["Flutter", "SQLite", "Charts", "PDF Export"],
-    platforms: ["Android"],
-    downloads: "",
-    rating: 4.4
-  },
-  {
-    id: 11,
-    name: "EduLearn",
-    description: "An e-learning platform with video courses, quizzes, student progress, and certificate generation. Admin panel for content upload.",
-    technologies: ["Flutter", "Firebase", "Video Player", "Quiz System"],
-    platforms: ["Android", "iOS"],
-    downloads: "",
-    rating: 4.6
-  },
-  {
-    id: 12,
-    name: "FitnessMate",
-    description: "Fitness tracker app with daily goals, water reminders, workout routines, and progress reports using charts and calendar integration.",
-    technologies: ["Flutter", "Calendar", "Charts", "Notifications"],
-    platforms: ["Android", "iOS", "Smart Watch"],
-    downloads: "",
-    rating: 4.7
-  },
-  {
-    id: 13,
-    name: "Scan2PDF",
-    description: "PDF scanner app using camera with OCR support, document cropping, merging, and export to cloud services.",
-    technologies: ["Flutter", "Camera", "OCR", "PDF", "Cloud Integration"],
-    platforms: ["Android"],
-    downloads: "",
-    rating: 4.8
-  },
-  {
-    id: 14,
-    name: "ShopXpress",
-    description: "E-commerce application with cart, wishlist, payment gateway integration, and order tracking. Admin panel for sellers.",
-    technologies: ["Flutter", "GetX", "Payment Integration", "Firebase"],
-    platforms: ["Android", "iOS"],
-    downloads: "",
-    rating: 4.5
-  },
-  {
-    id: 15,
-    name: "ChatEase",
-    description: "Real-time chat app with Firebase authentication, group and private chat, image sharing, and online indicators.",
-    technologies: ["Flutter", "Firebase", "Chat", "Authentication"],
-    platforms: ["Android", "iOS"],
-    downloads: "",
-    rating: 4.6
-  },
-  {
-    id: 16,
-    name: "TravelGuide",
-    description: "Travel and tourism guide app with places listing, map integration, reviews, and itinerary planning.",
-    technologies: ["Flutter", "Maps", "Geolocation", "REST API"],
-    platforms: ["Android", "iOS"],
-    downloads: "30K+",
-    rating: 4.5
-  },
-  {
-    id: 17,
-    name: "Newsly",
-    description: "News aggregator app with personalized feed, bookmarks, and category filtering. API-based dynamic content fetching.",
-    technologies: ["Flutter", "REST API", "News API", "Local Storage"],
-    platforms: ["Android", "iOS"],
-    downloads: "",
-    rating: 4.4
-  },
-  {
-    id: 18,
-    name: "MediCare",
-    description: "Health tracking and appointment booking app with doctor profiles, schedules, and online consultation options.",
-    technologies: ["Flutter", "Firebase", "Calendar", "Video Call API"],
-    platforms: ["Android", "iOS"],
-    downloads: "",
-    rating: 4.5
-  },
-  {
-    id: 19,
-    name: "QuizMe",
-    description: "Gamified quiz app with multiple categories, leaderboard, and timed challenges. Supports offline mode.",
-    technologies: ["Flutter", "Local DB", "Timer", "Gamification"],
-    platforms: ["Android"],
-    downloads: "",
-    rating: 4.3
-  },
-  {
-    id: 20,
-    name: "LangBridge",
-    description: "Language learning app with audio lessons, flashcards, daily goals, and level tracking. Supports multiple languages.",
-    technologies: ["Flutter", "Audio", "SQLite", "Progress Tracker"],
-    platforms: ["Android", "iOS"],
-    downloads: "",
-    rating: 4.6
-  },
-  {
-    id: 21,
-    name: "CryptoTrack",
-    description: "Cryptocurrency tracker with real-time price updates, favorites list, alerts, and market analysis.",
-    technologies: ["Flutter", "API Integration", "Charts", "Notifications"],
-    platforms: ["Android", "iOS"],
-    downloads: "",
-    rating: 4.5
-  },
-  {
-    id: 22,
-    name: "Eventify",
-    description: "Event booking and ticketing app with event listings, RSVP, QR check-ins, and admin dashboard.",
-    technologies: ["Flutter", "QR Code", "Firebase", "Ticket System"],
-    platforms: ["Android", "iOS"],
-    downloads: "",
-    rating: 4.4
-  },
-  {
-    id: 23,
-    name: "WeatherNow",
-    description: "Simple and accurate weather app with live updates, forecasts, and radar animations using OpenWeatherMap API.",
-    technologies: ["Flutter", "Weather API", "Animations"],
-    platforms: ["Android", "iOS"],
-    downloads: "",
-    rating: 4.4
-  },
-  {
-    id: 24,
-    name: "PetCare",
-    description: "Pet care management app for pet profiles, reminders, vet visits, food schedules, and vaccination tracking.",
-    technologies: ["Flutter", "Local Storage", "Reminders", "Notifications"],
-    platforms: ["Android", "iOS"],
-    downloads: "",
-    rating: 4.6
-  }
+		name: 'BuddyPass Travel Planner',
+		description: 'Intelligent travel planning companion that helps users create detailed itineraries, discover destinations, book accommodations, and share travel experiences. Features include offline maps, expense tracking, and collaborative trip planning with friends.',
+		technologies: ['Flutter', 'Provider', 'Maps Integration', 'Offline Storage', 'Social Sharing', 'Travel APIs'],
+		platforms: ['iOS', 'Android'],
+		downloads: '8K+',
+		rating: 4.4,
+		appStoreUrl: 'https://apps.apple.com/us/app/buddypass/id6449385742',
+		playStoreUrl: 'https://play.google.com/store/apps/details?id=com.buddypass.travel'
+	}
 ];
 
 const AppShowcase = () => {
+	const handleAppClick = (app: App) => {
+		// Detect if user is on iOS or Android device
+		const userAgent = navigator.userAgent || navigator.vendor;
+		const isIOS = /iPad|iPhone|iPod/.test(userAgent);
+		const isAndroid = /android/i.test(userAgent);
+		
+		if (isIOS && app.appStoreUrl) {
+			window.open(app.appStoreUrl, '_blank');
+		} else if (isAndroid && app.playStoreUrl) {
+			window.open(app.playStoreUrl, '_blank');
+		} else {
+			// Default to App Store for desktop users
+			window.open(app.appStoreUrl || app.playStoreUrl, '_blank');
+		}
+	};
+
 	return (
 		<section className="py-16 md:py-20 relative">
 			<div className="container mx-auto px-4">
 				<h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center">Featured Apps</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
 					{apps.map((app) => (
-						<div key={app.id} className="group bg-gradient-to-b from-gray-800/50 to-gray-900/50 rounded-xl sm:rounded-2xl p-1">
+						<div 
+							key={app.id} 
+							className="group bg-gradient-to-b from-gray-800/50 to-gray-900/50 rounded-xl sm:rounded-2xl p-1 cursor-pointer hover:scale-105 transition-transform duration-300"
+							onClick={() => handleAppClick(app)}
+						>
 							<div className="bg-gradient-to-b from-gray-900 to-gray-800 rounded-xl sm:rounded-2xl overflow-hidden p-4 sm:p-6 relative">
 								<div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6">
 									{/* App Icon */}
@@ -300,6 +172,26 @@ const AppShowcase = () => {
 												</svg>
 												<span>{app.platforms.join(' & ')}</span>
 											</div>
+										</div>
+
+										{/* Store Links */}
+										<div className="flex justify-center sm:justify-start gap-3 mt-4">
+											{app.appStoreUrl && (
+												<div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-800/50 border border-gray-700/50 hover:border-blue-500/50 transition-colors text-xs">
+													<svg className="w-4 h-4 text-gray-400" viewBox="0 0 24 24" fill="currentColor">
+														<path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/>
+													</svg>
+													<span className="text-gray-300">App Store</span>
+												</div>
+											)}
+											{app.playStoreUrl && (
+												<div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-800/50 border border-gray-700/50 hover:border-green-500/50 transition-colors text-xs">
+													<svg className="w-4 h-4 text-gray-400" viewBox="0 0 24 24" fill="currentColor">
+														<path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+													</svg>
+													<span className="text-gray-300">Play Store</span>
+												</div>
+											)}
 										</div>
 									</div>
 								</div>
