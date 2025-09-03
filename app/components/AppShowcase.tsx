@@ -21,8 +21,7 @@ const apps: App[] = [
 		platforms: ['iOS', 'Android'],
 		downloads: '10K+',
 		rating: 4.8,
-		appStoreUrl: 'https://apps.apple.com/us/app/runpickquick/id6738142874',
-		playStoreUrl: 'https://play.google.com/store/apps/details?id=com.runpickquick.customer'
+		appStoreUrl: 'https://apps.apple.com/us/app/runpickquick/id6738142874'
 	},
 	{
 		id: 2,
@@ -32,8 +31,7 @@ const apps: App[] = [
 		platforms: ['iOS', 'Android'],
 		downloads: '5K+',
 		rating: 4.7,
-		appStoreUrl: 'https://apps.apple.com/us/app/runpickquick-driver/id6738149689',
-		playStoreUrl: 'https://play.google.com/store/apps/details?id=com.runpickquick.driver'
+		appStoreUrl: 'https://apps.apple.com/us/app/runpickquick-driver/id6738149689'
 	},
 	{
 		id: 3,
@@ -43,8 +41,7 @@ const apps: App[] = [
 		platforms: ['iOS', 'Android'],
 		downloads: '25K+',
 		rating: 4.9,
-		appStoreUrl: 'https://apps.apple.com/us/app/wishhealth-for-doctors/id1497794891',
-		playStoreUrl: 'https://play.google.com/store/apps/details?id=com.wishhealth.doctors'
+		appStoreUrl: 'https://apps.apple.com/us/app/wishhealth-for-doctors/id1497794891'
 	},
 	{
 		id: 4,
@@ -54,8 +51,7 @@ const apps: App[] = [
 		platforms: ['iOS', 'Android'],
 		downloads: '50K+',
 		rating: 4.6,
-		appStoreUrl: 'https://apps.apple.com/us/app/move-fitness-app/id1623388100',
-		playStoreUrl: 'https://play.google.com/store/apps/details?id=com.movefitness.app'
+		appStoreUrl: 'https://apps.apple.com/us/app/move-fitness-app/id1623388100'
 	},
 	{
 		id: 5,
@@ -65,8 +61,7 @@ const apps: App[] = [
 		platforms: ['iOS', 'Android'],
 		downloads: '15K+',
 		rating: 4.5,
-		appStoreUrl: 'https://apps.apple.com/in/app/secondchance/id6502994190',
-		playStoreUrl: 'https://play.google.com/store/apps/details?id=com.secondchance.marketplace'
+		appStoreUrl: 'https://apps.apple.com/in/app/secondchance/id6502994190'
 	},
 	{
 		id: 6,
@@ -76,25 +71,15 @@ const apps: App[] = [
 		platforms: ['iOS', 'Android'],
 		downloads: '8K+',
 		rating: 4.4,
-		appStoreUrl: 'https://apps.apple.com/us/app/buddypass/id6449385742',
-		playStoreUrl: 'https://play.google.com/store/apps/details?id=com.buddypass.travel'
+		appStoreUrl: 'https://apps.apple.com/us/app/buddypass/id6449385742'
 	}
 ];
 
 const AppShowcase = () => {
 	const handleAppClick = (app: App) => {
-		// Detect if user is on iOS or Android device
-		const userAgent = navigator.userAgent || navigator.vendor;
-		const isIOS = /iPad|iPhone|iPod/.test(userAgent);
-		const isAndroid = /android/i.test(userAgent);
-		
-		if (isIOS && app.appStoreUrl) {
+		// Always open App Store URL since these are iOS apps
+		if (app.appStoreUrl) {
 			window.open(app.appStoreUrl, '_blank');
-		} else if (isAndroid && app.playStoreUrl) {
-			window.open(app.playStoreUrl, '_blank');
-		} else {
-			// Default to App Store for desktop users
-			window.open(app.appStoreUrl || app.playStoreUrl, '_blank');
 		}
 	};
 
